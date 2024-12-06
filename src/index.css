@@ -1,0 +1,39 @@
+@font-face {
+    font-family:Gumela;
+    src: url('./fonts/Gumela Regular.otf') format('opentype');
+  }
+  *{
+    font-family: 'Gumela';
+    font-weight: normal;
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  body{
+    margin: 0;
+  }
+  .button{
+    background-color: rgb(235, 104, 11);
+    border-radius: 15px;
+    border-color: rgb(241, 163, 74) ;
+    color: rgb(247, 242, 239);
+    box-shadow: 0px 15px 35px 2px  rgb(235, 104, 11);
+    width: 130px;
+  }
+  .button:hover{
+    background-color: white;
+    color: rgb(245, 92, 4);
+    border-color: rgb(235, 104, 11) ;
+    
+  }
+  .blur{
+    position: absolute;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    filter: blur(210px);
+    z-index: -2;
+}

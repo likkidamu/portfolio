@@ -1,0 +1,111 @@
+.Intro{
+    display: flex;
+    height: 75vh;
+    margin-top: 6rem;
+}
+.i-left{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.i-right{
+     flex: 1;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>:nth-child(1){
+    font-size: 3rem;
+    font-style: bold;
+    color: black;
+}
+.i-name>:nth-child(2){
+    font-size: 4rem;
+    font-style: bold;
+    color: orange;
+    border: black;
+}
+.i-name>:nth-child(3){
+    font-size: 1rem;
+    color: rgb(108, 99, 99);
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.i-icons{
+    display: flex;
+    gap: 3rem;
+    margin-top: 40px;
+    transform: scale(0.5);
+}
+.i-right img {
+    position: relative;
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    z-index: 0;
+    transition: all 0.3s ease-in-out; 
+    filter: blur(0.25px); 
+    /* border: 3px solid rgba(255, 255, 255, 0.6);  */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.i-right img:hover {
+    filter: blur(0px); 
+    transform: scale(1.05); 
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
+    background: white;
+    z-index: 3;
+}
+@media only screen and (max-width: 480px) {
+    .Intro {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: 3rem; /* Adjusted for smaller screens */
+    }
+    .i-left, .i-right {
+        flex: unset;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .i-name {
+        margin-top: 1rem;
+    }
+    .i-name>:nth-child(1) {
+        font-size: 2rem; /* Smaller font for phone screens */
+    }
+    .i-name>:nth-child(2) {
+        font-size: 2.5rem; /* Adjusted font size */
+    }
+    .i-name>:nth-child(3) {
+        font-size: 0.875rem; /* Smaller description text */
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+    .i-icons {
+        gap: 1.5rem;
+        margin-top: 20px;
+        transform: scale(0.7); /* Slightly larger icons for better visibility */
+    }
+    .i-right img {
+        height: 250px;
+        width: 200px;
+        border-radius: 15px;
+        filter: blur(0.5px);
+    }
+    .i-right img:hover {
+        transform: scale(1.02); /* Subtle hover effect for smaller screens */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+}

@@ -1,0 +1,59 @@
+.expirience{
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+}
+.Achievements{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+    position: relative; 
+    width: 4rem; 
+    height: 4rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2rem;
+} 
+.circle::before {
+    content: '';  
+    position: absolute; 
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 50%;  
+    background-image: linear-gradient(to bottom, #afe630 0%, #feb47b 100%);  
+    z-index: -1; 
+  }
+  @media only screen and (max-width: 480px) {
+    .expirience {
+        flex-direction: column; /* Stack Achievements vertically */
+        align-items: center; /* Center-align content */
+        height: auto; /* Adjust height to fit content */
+        margin-top: 1rem; /* Add spacing at the top */
+    }
+    .Achievements {
+        margin-bottom: 1.5rem; /* Add spacing between stacked items */
+    }
+    .circle {
+        width: 3rem; /* Reduce size for smaller screens */
+        height: 3rem;
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .circle::before {
+        top: -5px; /* Adjust gradient size */
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+    }
+}

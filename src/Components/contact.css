@@ -1,0 +1,121 @@
+/* Base styles for larger screens */
+.contact-form {
+    height: 100vh;
+    display: flex;
+    
+}
+
+.c-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.c-left > :nth-child(1) {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.c-left > :nth-child(2) {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: orange;
+}
+
+.c-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Reduced gap for compact layout */
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 400px; /* Limit the width for better appearance */
+}
+
+input.user,
+textarea.user {
+    padding: 10px;
+    margin-bottom: 1rem;
+    width: 100%; /* Full width inside the form container */
+    border-radius: 4px;
+    outline: none;
+    border: 3px solid orange;
+    font-size: 1rem; /* Default font size */
+}
+
+.thank-you-message {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #026205;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px #026205;
+}
+
+/* Media query for mobile devices (iPhone Pro Max size) */
+@media (max-width: 500px) {
+    .contact-form {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 0; /* Remove unwanted space between sections */
+        padding: 10px;
+        height: auto;
+    }
+    
+    .c-left {
+        flex: 0 0 auto; 
+        margin-bottom: 0; 
+        gap: 0;
+    }
+    
+    .c-right {
+        flex: 0 0 auto; 
+        margin-top: 25px; /* Ensure no gap between .c-left and .c-right */
+        padding-top: 0;
+        margin-bottom: 40px;
+        width: 100%; /* Make it responsive */
+        height: auto; /* Allow it to adjust dynamically */
+    }
+    
+    .c-left > :nth-child(1) {
+        font-size: 1rem; /* Reduced font size for "Get in Touch" */
+    }
+
+    .c-left > :nth-child(2) {
+        font-size: 1rem; /* Reduced font size for "Please Fill Out This Form" */
+    }
+
+    form {
+        gap: 0.4rem; /* Compact form layout for mobile */
+        width: 100%; /* Form takes full screen width */
+        padding: 0 15px; /* Add horizontal padding for smaller screens */
+    }
+
+    input.user,
+    textarea.user {
+        font-size: 0.9rem; /* Slightly smaller input font size */
+    }
+
+    .thank-you-message {
+        font-size: 1rem; /* Adjusted thank-you message font size */
+    }
+}

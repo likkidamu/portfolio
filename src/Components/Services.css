@@ -1,0 +1,61 @@
+.Services{
+    display: flex;
+    height: 80vh;
+    margin-top: 3rem;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+.review>:nth-child(1){
+    font-size: 3rem;
+    font-style: bold;
+    color: black;
+}
+.review>:nth-child(2){
+    font-style: bold;
+    color: rgb(108, 99, 99);
+}
+.review>:nth-child(3){
+    width: 10rem;
+    height: 3rem;
+}
+.cards{
+    flex: 1;
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}@media only screen and (max-width: 480px) {
+    .Services {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 1rem; 
+        gap: 2rem;/* Reduce margin for smaller screens */
+    }
+    .review {
+        text-align: center; /* Center-align text */
+        gap: 1rem; /* Reduce spacing between items */
+    }
+    .review > :nth-child(1) {
+        font-size: 2rem; /* Adjust font size */
+    }
+    .review > :nth-child(2) {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+    .review > :nth-child(3) {
+        width: 8rem; /* Reduce button width */
+        height: 2.5rem; /* Reduce button height */
+    }
+    .cards {
+        position: relative;
+        flex-wrap: wrap; /* Allow cards to stack if needed */
+        justify-content: center; /* Center align cards */
+    }
+    .cards > * {
+        position: static; /* Remove absolute positioning for stacking */
+        margin-bottom: 1rem; /* Add spacing between cards */
+    }
+}

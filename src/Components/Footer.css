@@ -1,0 +1,105 @@
+/* Footer Container */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: -1.5rem -3.5rem;
+}
+
+/* Footer Content */
+.f-content {
+    position: absolute;
+    bottom: 2rem; /* Moves content closer to the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+/* Email Link */
+.f-content > span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: orange;
+}
+
+/* Social Media Links */
+.f-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.f-container a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.f-container a:hover {
+    transform: scale(1.1);
+    color: orange;
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center align vertically */
+        height: auto; /* Adjust height based on content */
+        margin: -3.5rem -3.5rem;
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    .f-content {
+        display: flex;
+        flex-direction: column; /* Stack the elements */
+        align-items: center; /* Center align content */
+        gap: 0.4rem; /* Reduce gap for smaller screens */
+        padding-top: 5rem;
+        /* Add padding for better readability */
+    }
+    .footer img {
+        width: 150%; /* Increase image width */
+        height: 280px; /* Maintain aspect ratio */
+    }
+
+    .f-content > span {
+        font-size: 0.6rem; /* Adjust font size for readability */
+        text-align: center; /* Center align text */
+        word-break: break-word; /* Ensure email wraps on smaller screens */
+    }
+
+    .f-container {
+        display: flex;
+        justify-content: center; /* Center align icons */
+        gap: 0.8rem; /* Reduce spacing between icons */
+    }
+
+    .f-container a {
+        size: 2rem; /* Adjust icon size */
+        transform: scale(0.9); /* Slightly reduce scale */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .f-container a:hover {
+        transform: scale(1); /* Restore size on hover */
+    }
+}
+

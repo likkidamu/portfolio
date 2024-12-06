@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02653518.css",
+    "main.js": "/static/js/main.1610fcac.js",
+    "static/media/damunew.png": "/static/media/damunew.732633d59a1706ff2b1b.png",
+    "static/media/Resume.pdf": "/static/media/Resume.fe68ee0b0c70b0ece0ae.pdf",
+    "static/media/ecommerce.png": "/static/media/ecommerce.522da76635d52117102b.png",
+    "static/media/musicapp.png": "/static/media/musicapp.f1c301f91904ef5f9249.png",
+    "static/media/tradeapp.jpeg": "/static/media/tradeapp.55984aaacd3d280b1483.jpeg",
+    "static/media/hoc.png": "/static/media/hoc.e6af51fc04c57ae67096.png",
+    "static/media/Gumela Regular.otf": "/static/media/Gumela Regular.0ae83c6988a536716eb4.otf",
+    "static/media/thumbup.png": "/static/media/thumbup.e06790ba656f0397cbe5.png",
+    "static/media/wave.png": "/static/media/wave.fdfef4069ad90f610990.png",
+    "static/media/crown.png": "/static/media/crown.dbe416beae9b49b842ab.png",
+    "static/media/desighn.webp": "/static/media/desighn.bb0bdd1adcc015da167d.webp",
+    "index.html": "/index.html",
+    "main.02653518.css.map": "/static/css/main.02653518.css.map",
+    "main.1610fcac.js.map": "/static/js/main.1610fcac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02653518.css",
+    "static/js/main.1610fcac.js"
+  ]
+}

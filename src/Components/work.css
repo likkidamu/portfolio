@@ -1,0 +1,163 @@
+/* General Work Section Styles */
+.work {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 5rem;
+}
+
+/* Clients Section */
+.Clients {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.Clients > :nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(50, 50, 50); /* Neutral tone for better readability */
+}
+
+.Clients > :nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 140, 0); /* Bright orange for emphasis */
+}
+
+.Clients > :nth-child(3) {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: rgb(100, 100, 100); /* Subtle gray for paragraph */
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.button {
+    padding: 0.7rem 1.5rem;
+    background-color: rgb(6, 209, 128);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: rgb(4, 180, 110); /* Slightly darker shade on hover */
+}
+
+/* Right Side (Circles) */
+.w-right {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Circle */
+.w-mainCircle {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 10px 10px 2px black;
+}
+
+/* Secondary Circles */
+.w-seccircle {
+    position: absolute;
+}
+
+.w-seccircle img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid rgb(218, 217, 217);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.w-seccircle img:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+}
+
+/* Decorative Circles */
+.Yellocircle {
+    position: absolute;
+    background: rgb(6, 209, 128);
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    z-index: -2;
+    top: -6%;
+    left: 58%;
+    opacity: 0.8;
+}
+
+.Bluecircle {
+    position: absolute;
+    background: rgb(248, 224, 9);
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    z-index: -2;
+    top: 10%;
+    left: 60%;
+    opacity: 0.8;
+}
+
+/* Blur Background */
+.blur {
+    display: none; /* Disabled for cleaner design */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 480px) {
+    .work {
+        flex-direction: column; /* Stack layout vertically */
+        align-items: center; /* Center align items */
+        height: auto; /* Adjust height */
+        gap: 2rem;
+    }
+
+    .Clients {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .Clients > :nth-child(1),
+    .Clients > :nth-child(2),
+    .Clients > :nth-child(3) {
+        text-align: center;
+    }
+
+    .w-right {
+        display: flex;
+        justify-content: center; /* Center main circle */
+    }
+
+    .w-mainCircle {
+        width: 10rem;
+        height: 10rem; /* Reduce size for smaller screens */
+    }
+
+    .w-seccircle img {
+        width: 60px;
+        height: 60px; /* Scale down secondary circles */
+    }
+
+    .Yellocircle,
+    .Bluecircle {
+        width: 10rem;
+        height: 10rem; /* Scale down decorative circles */
+    }
+}

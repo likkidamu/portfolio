@@ -1,0 +1,109 @@
+/* Card Styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  width: 13rem;
+  height: 15rem; /* Adjust height as needed */
+  border-radius: 15px;
+  border: 5px solid orange;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+/* Card Image */
+.card-image {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid orange;
+  object-fit: cover;
+}
+
+/* Card Heading */
+.card-heading {
+  font-family: sans-serif;
+  font-size: medium;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Card Details */
+.card-details {
+  font-family: sans-serif;
+  font-size: small;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Learn More Button */
+.c-button {
+  border: none;
+  background: none;
+  font-size: small;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  color: #085b9b;
+  cursor: pointer;
+}
+
+.c-button:hover {
+  text-decoration: underline;
+}
+
+/* Full-Screen Overlay */
+.full-screen-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+/* Full-Screen Content Box */
+.full-screen-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.full-screen-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.full-screen-content p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+/* Close Button */
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-btn:hover {
+  background-color: #e53935;
+}
